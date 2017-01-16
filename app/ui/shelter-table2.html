@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<table width="100%" id="dataTables-example">
+    <thead>
+    <tr>
+        <th>id2</th>
+        <th>barinak adi</th>
+        <th>telefon</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr *ngFor="let shelter of shelters2">
+    <td>{{ shelter.id }}</td>
+    <td>{{ shelter.name | uppercase}}</td>
+    <td>{{ shelter.phone }}</td>
+    <!--<td><a href="#" (click)="onShelterClick(shelter)">{{ shelter.name | uppercase}}</a></td>-->
+    <!--<td>{{ shelter.phone | phonenumber:'+9':'pbx'}}</td>-->
+    </tr>
+    <tr>asdsad</tr>
+    <tr>asdsad</tr>
+    <tr>asdsad</tr>
+    </tbody>
+</table>

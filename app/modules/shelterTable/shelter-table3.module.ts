@@ -3,12 +3,12 @@
  */
 
 import {NgModule} from "@angular/core";
-import {ShelterTableComponent} from "./components/shelter-table.component";
+import {ShelterTable3Component} from "./shelter-table3.component";
 @NgModule({
     imports:[],
-    declarations:[ShelterTableComponent],
-    exports:[ShelterTableComponent]
+    declarations:[ShelterTable3Component],
+    exports:[ShelterTable3Component]
 })
-export class ShelterTableModule{
+export class ShelterTable3Module{
 
 }

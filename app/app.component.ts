@@ -1,7 +1,13 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Shelter} from "./model/Shelter";
 
 @Component({
-  selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+    selector: 'my-app',
+    templateUrl: 'ui/app.html',
+    moduleId: module.id
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent {
+    name = 'Angularrrr';
+
+    private sheltersAtMain: Shelter[] = [new Shelter(1,'kadikoy','02121234567'),new Shelter(2,'uskudar','02167654321')];
+}
