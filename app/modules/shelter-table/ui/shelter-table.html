@@ -1,0 +1,17 @@
+<table width="100%" id="dataTables-example">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>barinak adi</th>
+            <th>telefon</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let shelter of shelters">
+            <td>{{ shelter.id }}</td>
+            <td><a href="#" (click)="selectShelter(shelter)">{{ shelter.name | uppercase}}</a></td>
+            <td>{{ shelter.phone | phonenumber:'pbx' }}</td>
+        </tr>
+    </tbody>
+</table>
+

@@ -1,5 +1,22 @@
-<h1>Hello {{name}}</h1>
-
-<!--<shelter-table2 [shelters2]="sheltersAtMain"></shelter-table2>-->
-<shelter-table3 [shelters2]="sheltersAtMain"></shelter-table3>
-<!--<shelter-table [shelters2]="sheltersAtMain"></shelter-table>-->
+<div id="wrapper">
+    <h1>Hello {{name}}</h1>
+    <navigation-pane></navigation-pane>
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Barınak Yönetimi</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Barınaklar</div>
+                        <div class="panel-body">
+                            <shelter-table [shelters]="sheltersAtMain" (onShelterSelected)="editShelter($event)"></shelter-table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <shelter-form *ngIf="!!selectedShelter" ></shelter-form>
+    </div>
+</div>

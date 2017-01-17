@@ -1,0 +1,1 @@
+{"version":3,"file":"navigation-pane.module.js","sourceRoot":"","sources":["navigation-pane.module.ts"],"names":[],"mappings":";;;;;;;AAAA,sCAAuC;AACvC,yEAAoE;AAMpE,IAAa,oBAAoB;IAAjC;IAEA,CAAC;IAAD,2BAAC;AAAD,CAAC,AAFD,IAEC;AAFY,oBAAoB;IALhC,eAAQ,CAAC;QACN,OAAO,EAAC,EAAE;QACV,YAAY,EAAC,CAAC,mDAAuB,CAAC;QACtC,OAAO,EAAC,CAAC,mDAAuB,CAAC;KACpC,CAAC;GACW,oBAAoB,CAEhC;AAFY,oDAAoB"}

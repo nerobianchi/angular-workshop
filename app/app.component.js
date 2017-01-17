@@ -12,6 +12,10 @@ var AppComponent = (function () {
         this.name = 'Angularrrr';
         this.sheltersAtMain = [new Shelter_1.Shelter(1, 'kadikoy', '02121234567'), new Shelter_1.Shelter(2, 'uskudar', '02167654321')];
     }
+    AppComponent.prototype.editShelter = function (shelter) {
+        this.selectedShelter = shelter;
+        alert('shelter is selected: ' + shelter.name);
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([

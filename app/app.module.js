@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
-var shelter_table2_component_1 = require("./shelter-table2.component");
-var shelter_table3_module_1 = require("./modules/shelterTable/shelter-table3.module");
+var shelter_table_module_1 = require("./modules/shelter-table/shelter-table.module");
+var navigation_pane_module_1 = require("./modules/navigation-pane/navigation-pane.module");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -17,8 +17,8 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, shelter_table3_module_1.ShelterTable3Module],
-        declarations: [app_component_1.AppComponent, shelter_table2_component_1.ShelterTable2Component],
+        imports: [platform_browser_1.BrowserModule, shelter_table_module_1.ShelterTableModule, navigation_pane_module_1.NavigationPaneModule],
+        declarations: [app_component_1.AppComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
