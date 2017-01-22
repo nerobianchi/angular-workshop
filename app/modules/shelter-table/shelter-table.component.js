@@ -16,6 +16,7 @@ var ShelterTableComponent = (function () {
     }
     ShelterTableComponent.prototype.selectShelter = function (shelter) {
         this.onShelterSelected.emit(shelter);
+        this.selectedShelter = shelter;
         this.shelterForm.editShelter(shelter);
     };
     return ShelterTableComponent;

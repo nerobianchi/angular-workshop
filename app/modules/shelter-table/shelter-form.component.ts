@@ -1,5 +1,7 @@
 import { Component} from '@angular/core';
 import {Shelter} from "../../model/Shelter";
+import {NgForm} from '@angular/forms';
+
 @Component({
     selector:'shelter-form',
     moduleId: module.id,

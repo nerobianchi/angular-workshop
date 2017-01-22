@@ -11,11 +11,10 @@ export class AppComponent {
     name = 'Angularrrr';
 
     private sheltersAtMain: Shelter[] = [new Shelter(1, 'kadikoy', '02121234567'), new Shelter(2, 'uskudar', '02167654321')];
-    private selectedShelter: Shelter;
+    // private selectedShelter: Shelter;
 
     private editShelter(shelter: Shelter) {
-        this.selectedShelter = shelter;
-        
+
         alert('shelter is selected: ' + shelter.name);
     }
 }

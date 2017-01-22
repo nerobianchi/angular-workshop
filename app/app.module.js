@@ -10,6 +10,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var shelter_table_module_1 = require("./modules/shelter-table/shelter-table.module");
 var navigation_pane_module_1 = require("./modules/navigation-pane/navigation-pane.module");
+var forms_1 = require("@angular/forms");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -17,7 +18,7 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, shelter_table_module_1.ShelterTableModule, navigation_pane_module_1.NavigationPaneModule],
+        imports: [platform_browser_1.BrowserModule, shelter_table_module_1.ShelterTableModule, navigation_pane_module_1.NavigationPaneModule, forms_1.FormsModule],
         declarations: [app_component_1.AppComponent],
         bootstrap: [app_component_1.AppComponent]
     })
